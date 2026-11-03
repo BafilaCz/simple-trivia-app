@@ -1,0 +1,195 @@
+/* main color: #111422 */
+/* button bckgrnd color: #0D0D0D */
+/* button bckgrnd color hover: #0b0b0b */
+/* red: #990023  */
+/* blue: #0099b4 */
+/* green: #009b02 */
+/* yellow: #e2d300 */
+/* dark: #212121 */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+*:focus{
+    outline: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.disabled {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+body{
+    background-color: #111422
+}
+
+
+#question{
+    font-family: sans-serif;
+    font-size: 3em;
+    color: white
+    
+
+}
+    
+p{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: white
+    
+
+}
+
+button{
+    font-size: 2em;
+    padding: 0.2em;
+    color: white;
+    background-color: #0D0D0D;
+    border: 3px solid #0099b4;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease, visibility 0s linear 0s;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #2d2d2d;
+}
+
+
+
+#endGameButton {
+    border-color: #990023;
+}
+
+#restartGameButton {
+    border-color: #e2d300;
+}
+
+#contentTrivia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 2em;
+    padding-top: 5em;
+}
+#contentTrivia > * {
+    margin-bottom: 1em
+}
+
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+h1{
+    font-family: sans-serif;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    margin-top: 2em;
+    /* margin: auto; */
+    position: relative;
+    z-index: 2;
+    
+
+}
+
+.difficultyButton{
+    z-index: 2;
+    width: 7em;
+    margin: 0.5em;
+}
+
+  
+#easyButton{
+    border-color: #009b02 
+}
+#mediumButton{
+    border-color: #e2d300;
+}
+#hardButton{
+    border-color: #990023
+}
+
+#difficultyButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+canvas{
+    border: 3px solid black;
+    background-color: #111422;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    
+
+   
+}
+#inputColor{
+    font-size: 2em;
+    padding: 0.2em;
+    margin: 0.2em;
+    width: 3em;
+    height: 2em;
+    color: white;
+    background-color: #0D0D0D;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease, visibility 0s linear 0s;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    margin-top: 1em;
+  
+
+    
+
+}
+#resetCSSButton{
+    font-size: 2em;
+    padding: 0.2em;
+    color: white;
+    background-color: #0D0D0D;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, opacity 0.5s ease, visibility 0s linear 0s;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    margin-top: 1em;
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    position: relative;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple trivia app</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/icon.ico">
+
+
+</head>
+<body>
+    
+    <header>
+
+        <input type="color" id="inputColor">
+        <button id="resetCSSButton">⟳</button>
+
+    </header>
+    <div id="contentTrivia">
+
+        <p id="question">If none of the question is showing, just wait 5 seconds and refresh</p>
+
+        <div id="triviaButtons">
+            <button class="option, disabled"  id="option1"></button>
+            <button class="option, disabled" id="option2"></button>
+            <button class="option, disabled" id="option3"></button>
+            <button class="option, disabled" id="option4"></button>
+        </div>
+
+  
+        <p id="score">SCORE: 0</p>
+
+    
+        <p id="maxScore">BEST SCORE: 0</p>
+
+        <div id="nextQuestion">
+            <button id="endGameButton" class="">QUIT</button>
+            <button id="restartGameButton" class="">PLAY AGAIN</button>
+            <button id="nextQuestionButton" class="disabled">NEXT QUESTION</button>
+  
+        </div>
+
+        <p id="disclaimer">You can answer only one question in 5 seconds, so if nothing is happening, just wait :)</p>
+
+    </div>
+    
+
+
+
+</body>
+
+
+
+
+
+<script src="./script/script.js"></script>
+</html>
